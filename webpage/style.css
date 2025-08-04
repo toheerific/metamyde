@@ -1,0 +1,51 @@
+/* 
+ * Custom CSS for GlowSkin Template
+ * This file contains minimal custom styles as most styling is handled by Tailwind
+ */
+
+/* Custom font sizes (optional) */
+.text-xxl {
+    font-size: 3.5rem;
+    line-height: 1;
+}
+
+/* Smooth scrolling for anchor links */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom animation for FAQ toggle */
+.faq-toggle .fa-chevron-down {
+    transition: transform 0.3s ease;
+}
+
+.faq-toggle.active .fa-chevron-down {
+    transform: rotate(180deg);
+}
+
+/* Custom hover effect for product cards */
+.product-card:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}
+
+/* Mobile menu animation */
+#mobile-menu {
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+}
+
+/* Custom styles for the hero section gradient */
+.hero-gradient {
+    background: linear-gradient(135deg, #e0e7ff 0%, #fce7f3 100%);
+}
+
+/* Custom focus styles for better accessibility */
+button:focus, a:focus, input:focus {
+    outline: 2px solid #6366f1;
+    outline-offset: 2px;
+}
+
+/* Custom transition for buttons */
+.btn-transition {
+    transition: all 0.2s ease-in-out;
+}
